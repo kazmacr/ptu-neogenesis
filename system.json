@@ -1,0 +1,47 @@
+{
+  "id": "ptung",
+  "title": "Pokemon NeoGenesis",
+  "description": "The Pokemon NeoGenesis system for FoundryVTT!",
+  "authors": [
+    {
+      "name": "King Kazma",
+      "discord": "kazmacrc"
+    }
+  ],
+  "url": "https://github.com/kazmacr/ptu-neogenesis/",
+  "license": "LICENSE.txt",
+  "readme": "README.md",
+  "bugs": "",
+  "changelog": "CHANGELOG.md",
+  "media": [
+    {
+      "type": "setup",
+      "url": "systems/ptung/assets/pokeball.png",
+      "thumbnail": "systems/ptung/assets/pokeball.png"
+    }
+  ],
+  "version": "0.0.1",
+  "compatibility": {
+    "minimum": 11,
+    "verified": "12"
+  },
+  "esmodules": ["module/ptung.mjs"],
+  "styles": ["css/ptung.css"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "packs": [],
+  "packFolders": [],
+  "socket": false,
+  "manifest": "https://github.com/kazmacr/ptu-neogenesis/blob/main/system.json",
+  "download": "https://github.com/kazmacr/ptu-neogenesis/archive/refs/tags/v0.0.1.zip",
+  "background": "systems/ptung/assets/pokeball.png",
+  "gridDistance": 1,
+  "gridUnits": "m",
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "power"
+}

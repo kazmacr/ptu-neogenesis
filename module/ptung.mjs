@@ -1,12 +1,15 @@
-// Import document classes.
+// Importando las clases de los documentos JS en la carpeta documents.
 import { PTUNeoGenesisActor } from './documents/actor.mjs';
 import { PTUNeoGenesisItem } from './documents/item.mjs';
-// Import sheet classes.
+
+// Importando las clases de los documentos JS en la capeta sheets.
 import { PTUNeoGenesisActorSheet } from './sheets/actor-sheet.mjs';
 import { PTUNeoGenesisItemSheet } from './sheets/item-sheet.mjs';
-// Import helper/utility classes and constants.
+
+// Importando las clases de los documentos JS en la carperta helper.
 import { preloadHandlebarsTemplates } from './helpers/templates.mjs';
 import { PTUNG } from './helpers/config.mjs';
+
 // Import DataModel classes
 import * as models from './data/_module.mjs';
 
@@ -31,7 +34,8 @@ Hooks.once('init', function () {
    * @type {String}
    */
   CONFIG.Combat.initiative = {
-    formula: '@abilities.dex.mod + (1d20/100)',
+    formula: '1d20 + @abilities.dex.mod',
+    // formula: '@abilities.dex.mod + (1d20 / 100)',
     decimals: 2,
   };
 

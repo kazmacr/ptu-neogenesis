@@ -1,8 +1,96 @@
 {
   "Actor": {
-    "types": ["character", "npc"]
+    "types": ["trainer", "pokemon"],
+    "templates": {
+      "base": {
+        "level": {
+          "value": 1
+        },
+        "experience": {
+          "value": 0
+        },
+        "health": {
+          "value": 10,
+          "min": 0,
+          "max": 10
+        },
+        "stats": {
+          "atk": {
+            "value": 0
+          },
+          "def": {
+            "value": 0
+          },
+          "satk": {
+            "value": 0
+          },
+          "sdef": {
+            "value": 0
+          },
+          "vel": {
+            "value": 0
+          },
+          "precision": {
+            "value": 0
+          }
+        }
+      }
+    },
+    "trainer": {
+      "actionpoint": {
+        "value": 5,
+        "min": 0,
+        "max": 5
+      },
+      "templates": ["base"],
+      "biography": ""
+    },
+    "pokemon": {
+      "templates": ["base"]
+    }
   },
+
   "Item": {
-    "types": ["item", "feature", "spell"]
+    "types": ["item", "feature", "edge", "move", "pokeedge", "hability"],
+    "templates": {
+      "base": {
+        "name": "",
+        "description": ""
+      }
+    },
+    "item": {
+      "templates": ["base"]
+    },
+    "feature": {
+      "templates": ["base"]
+    },
+    "edge": {
+      "templates": ["base"]
+    },
+    "moves": {
+      "templates": ["base"],
+      "type": "",
+      "frequency": "",
+      "cp": 0,
+      "critical": 0,
+      "db": 0,
+      "formula": {
+        "attack": "d20 + @precision.final",
+        "damage": "formula dependiendo del db"
+      },
+      "category": "",
+      "range": {
+        "distance": 0,
+        "type": ""
+      },
+      "effect": "",
+      "contest": ""
+    },
+    "pokeedge": {
+      "templates": ["base"]
+    },
+    "hability": {
+      "templates": ["base"]
+    }
   }
 }

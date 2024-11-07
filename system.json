@@ -37,7 +37,7 @@
   "packs": [],
   "packFolders": [],
   "socket": false,
-  "manifest": "https://github.com/kazmacr/ptu-neogenesis/blob/master/system.json",
+  "manifest": "https://raw.githubusercontent.com/kazmacr/ptu-neogenesis/refs/heads/master/system.json?token=GHSAT0AAAAAAC2A46GRBZRR4DMER4TMLT7QZZND3HQ",
   "download": "https://github.com/kazmacr/ptu-neogenesis/archive/refs/tags/v0.0.1.zip",
   "background": "systems/ptung/assets/pokeball.png",
   "gridDistance": 1,

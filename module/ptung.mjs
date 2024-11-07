@@ -10,7 +10,7 @@ import { PTUNeoGenesisItemSheet } from './sheets/item-sheet.mjs';
 import { preloadHandlebarsTemplates } from './helpers/templates.mjs';
 import { PTUNG } from './helpers/config.mjs';
 
-// Import DataModel classes
+// Importando las clases de los DataModel en la carpeta data.
 import * as models from './data/_module.mjs';
 
 /* -------------------------------------------- */
